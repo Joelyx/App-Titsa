@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="600.0" stylesheets="@scratch.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tresvistas.controller.HomeController">
+   <children>
+      <ListView fx:id="lstLineas" layoutY="42.0" prefHeight="297.0" prefWidth="600.0" />
+      <Button fx:id="btnHome" layoutX="269.0" layoutY="355.0" mnemonicParsing="false" onAction="#irHome" text="Home" />
+      <Button fx:id="btnQr" layoutX="77.0" layoutY="355.0" mnemonicParsing="false" onAction="#abrirQr" text="QR" />
+      <Button fx:id="btnCuenta" layoutX="472.0" layoutY="355.0" mnemonicParsing="false" onAction="#irCuenta" text="Cuenta" />
+      <ImageView fx:id="titsaPng" fitHeight="37.0" fitWidth="200.0" layoutX="14.0" layoutY="3.0">
+         <image>
+            <Image url="@../../../../../../titsa.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

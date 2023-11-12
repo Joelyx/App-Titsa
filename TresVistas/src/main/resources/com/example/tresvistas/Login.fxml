@@ -28,6 +28,7 @@
     <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="5">
         <Button fx:id="botonIniciarSesion" onAction="#manejarIniciarSesion" text="Iniciar sesión" />
         <Button fx:id="botonRegistrar" onAction="#manejarRegistro" text="Ir a registrarse" />
+        <Button fx:id="botonHome" onAction="#manejarHome" text="Ir a Home" />
     </HBox>
    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN" GridPane.columnIndex="1" />
     <columnConstraints>

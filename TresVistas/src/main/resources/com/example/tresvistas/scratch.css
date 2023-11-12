@@ -1,0 +1,31 @@
+.list-view {
+    -fx-background-color: #4CAF50; /* Verde oscuro, cambia según la paleta de colores de la aplicación */
+    -fx-background-insets: 0;
+}
+
+.list-cell {
+    -fx-background-color: white, #4CAF50; /* Blanco con un borde verde oscuro */
+    -fx-background-insets: 0, 0 0 1 0; /* El borde solo en la parte inferior */
+    -fx-padding: 10px; /* Espacio alrededor del contenido de la celda */
+    -fx-border-color: transparent transparent #d0d0d0 transparent; /* Borde solo en la parte inferior */
+    -fx-border-width: 2; /* Ancho del borde */
+}
+
+.list-cell:filled:selected, .list-cell:filled:selected:focused {
+    -fx-background-color: #66BB6A; /* Color de selección, verde claro */
+}
+
+.button {
+    -fx-background-color: #4CAF50; /* Verde oscuro */
+    -fx-text-fill: white; /* Texto en color blanco */
+    -fx-border-color: #4CAF50; /* Borde del mismo color que el fondo */
+    -fx-border-width: 0; /* Sin borde visible */
+}
+
+.button:hover {
+    -fx-background-color: #66BB6A; /* Cambia a un verde más claro cuando se pasa el ratón por encima */
+}
+
+.anchor-pane {
+    -fx-background-color: #4CAF50; /* Fondo verde oscuro para todo el pane */
+}
