@@ -2,10 +2,16 @@ package com.example.tresvistas.controller;
 
 import com.example.tresvistas.model.Linea;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.image.ImageView;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.ArrayList;
@@ -35,6 +41,7 @@ public class HomeController implements Initializable {
         lstLineas.getItems().addAll(lineas);
 
     }
+
 
     public void irHome(ActionEvent actionEvent) {
     }

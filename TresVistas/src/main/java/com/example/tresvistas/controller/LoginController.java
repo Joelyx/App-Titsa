@@ -7,6 +7,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import javafx.scene.control.PasswordField;
@@ -25,6 +26,25 @@ public class LoginController {
     @FXML
     public void manejarIniciarSesion(){
 
+    }
+
+    @FXML
+    private Button btnOpenContact;
+
+    @FXML
+    private void onOpenContact() {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/tresvistas/Contacto.fxml"));
+            Parent parent = fxmlLoader.load();
+
+            Scene scene = new Scene(parent);
+            Stage stage = new Stage();
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.setScene(scene);
+            stage.showAndWait();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML

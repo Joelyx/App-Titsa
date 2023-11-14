@@ -13,6 +13,9 @@
 
 <GridPane alignment="center" hgap="10" prefHeight="439.0" prefWidth="663.0" style="-fx-background-color: #4CAF50;" vgap="10" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tresvistas.controller.LoginController">
 
+        <Button fx:id="btnOpenContact" text="Abrir Contacto" onAction="#onOpenContact"/>
+
+
     <Text GridPane.columnSpan="2" GridPane.rowIndex="1">
         <font>
             <Font size="20" />

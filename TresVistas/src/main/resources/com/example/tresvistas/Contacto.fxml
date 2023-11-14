@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Text?>
+
+<GridPane fx:controller="com.example.tresvistas.controller.ContactoController"
+          xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" hgap="10" vgap="10" >
+    <Label text="Nombre:"/>
+    <TextField fx:id="txtNombre" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+    <Label text="Apellidos:" GridPane.rowIndex="1"/>
+    <TextField fx:id="txtApellidos" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+    <Label text="Correo Electrónico:" GridPane.rowIndex="2"/>
+    <TextField fx:id="txtCorreo" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+    <Label text="Comentario:" GridPane.rowIndex="3"/>
+    <TextArea fx:id="txtComentario" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+    <Button text="Enviar" onAction="#onEnviar" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+    <Text fx:id="txtMensaje" GridPane.rowIndex="5" GridPane.columnIndex="1" fill="GREEN"/>
+</GridPane>
+
+
