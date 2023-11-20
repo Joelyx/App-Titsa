@@ -1,0 +1,39 @@
+<!--- <!DOCTYPE listacursos [
+  <!ELEMENT listacursos (curso)+>
+  <!ELEMENT curso (alumno)+>
+  <!ELEMENT alumno (dni, nombre, ap1, ap2?, listaasignaturas)>
+  <!ELEMENT listaasignaturas (asignatura+)>
+  <!ELEMENT asignatura (nombre, profesor)>
+  <!ATTLIST asignatura codigo CDATA #REQUIRED>
+  <!ELEMENT profesor (nrp, nombre, ap1, ap2?)>
+  <!ELEMENT dni (#PCDATA)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT ap1 (#PCDATA)>
+  <!ELEMENT ap2 (#PCDATA)>
+  <!ELEMENT nrp (#PCDATA)>
+]>-->
+
+<listacursos>
+  <curso>
+    <alumno>
+      <dni>123456789</dni>
+      <nombre>Juan</nombre>
+      <ap1>Gomez</ap1>
+      <ap2>Perez</ap2>
+      <listaasignaturas>
+        <asignatura codigo="MAT101">
+          <nombre>Matemáticas</nombre>
+          <profesor>
+            <nrp>001</nrp>
+            <nombre>Profesor1</nombre>
+            <ap1>Apellido1</ap1>
+            <ap2>Apellido2</ap2>
+          </profesor>
+        </asignatura>
+        <!-- Otras asignaturas aquí -->
+      </listaasignaturas>
+    </alumno>
+    <!-- Otros alumnos aquí -->
+  </curso>
+  <!-- Otros cursos aquí -->
+</listacursos>

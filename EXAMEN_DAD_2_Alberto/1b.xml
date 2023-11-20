@@ -1,0 +1,18 @@
+<inventario>
+    <objeto codigo="MM2809">
+      <mesa tipo="Oficina">
+        <tipo>Oficina</tipo>
+        <localizacion>B09</localizacion>
+      </mesa>
+      <objeto>
+        <objeto>
+          <ordenador>
+            <procesador fabricante="Intel">i3</procesador>
+            <memoria unidad="GB">2</memoria>
+            <discoduro>520</discoduro>
+          </ordenador>
+        </objeto>
+      </objeto>
+    </objeto>
+  </inventario>
+  
