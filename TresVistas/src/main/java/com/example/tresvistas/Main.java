@@ -15,8 +15,16 @@ public class Main extends Application {
         stage.setTitle("Titsa");
         stage.setScene(scene);
         stage.show();
+
+
     }
 
+    //funcion que cuente hasta 10
+    public static void contar(){
+        for (int i = 0; i <10; i++) {
+            System.out.println();
+        }
+    }
     public static void main(String[] args) {
         launch();
     }

@@ -1,0 +1,53 @@
+a)
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <xsl:output method="html" encoding="UTF-8"/>
+
+  <xsl:template match="/inventario">
+    <html>
+      <body>
+        <h2>Edificio A</h2>
+        <xsl:apply-templates select="producto[lugar/@edificio='A']"/>
+        <h2>Edificio B</h2>
+        <xsl:apply-templates select="producto[lugar/@edificio='B']"/>
+      </body>
+    </html>
+  </xsl:template>
+
+  <xsl:template match="producto">
+    <div>
+      <span><xsl:value-of select="nombre"/></span>
+      <span> | </span>
+      <span><xsl:value-of select="peso"/></span>
+      <span> | </span>
+      <span>A<xsl:value-of select="lugar/aula"/></span>
+    </div>
+  </xsl:template>
+
+</xsl:stylesheet>
+
+
+b)
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <xsl:output method="html" encoding="UTF-8"/>
+
+  <xsl:template match="/inventario">
+    <html>
+      <body>
+        <xsl:apply-templates select="producto"/>
+      </body>
+    </html>
+  </xsl:template>
+
+  <xsl:template match="producto">
+    <ul>
+      <li>
+        Elemento <xsl:value-of select="@codigo"/>
+        <ul>
+          <li>Nombre: <xsl:value-of select="nombre"/></li>
+          <li>Peso: <xsl:value-of select="concat(peso, peso/@unidad)"/></li>
+        </ul>
+      </li>
+    </ul>
+  </xsl:template>
+
+</xsl:stylesheet>
